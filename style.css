@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html,body{
+    height: 100%;
+}
+
+@font-face{
+    src: url('../fonts/OpenSans-Light.ttf');
+    font-family: "Open Sans";
+}
+
+.container-box{
+    width: 100%;
+    height: 100%;
+    background-color: #edf2f8;
+}
+
+
+.wraper-box{
+    /*box-shadow: 17px 11px 37px 0px rgba(0,0,0,0.68);*/
+    width: 100%;
+    max-width: 900px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,50%);
+    padding: 0 2%;
+}
+
+.div-flex{
+    display: flex;
+}
+
+.item1{
+    background-image: url('../images/drawers.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+
+.item2{
+    padding: 40px 40px;
+    width: 60%;
+    background-color: white;
+}
+
+
+.item2 h2{
+    color: #535a64;
+}
+
+.item2 p{
+    margin-top: 20px;
+    color: #6a737e;
+}
+
+.item2 .flex2{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.item2 .flex2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+
+.item2 .flex2 h3{
+    color: #767d86;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+
+.item2 > .flex2 > p{
+    position: relative;
+    padding-top: 10px;
+    left: -136px;
+    font-size: 15px;
+}
+
+.footer-box{
+    width: 100%;
+    background-color: #49556b;
+    display: none;
+}
+
+.footer-box p{
+    color: #8b97ad;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.footer-box img{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 768px){
+
+    .container-box{
+        height: auto;
+    }
+
+    .wraper-box{
+        position: relative;
+        top: -450px;
+        
+    }
+
+    .div-flex{
+        flex-direction: column;
+        padding: 100px;
+    }
+    .item1{
+        width: 100%;
+        padding-top: 60%;
+    }
+
+    .item2{
+        width: 100%;
+    }
+
+    .container-box .flex2{
+        display: none;
+    }
+
+    .footer-box{
+        display: inline-block;
+        padding: 30px 40px;
+    }
+
+}
+
+
+
+
+
